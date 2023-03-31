@@ -5,11 +5,11 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 
 //Importamos la conexion a la db y creación de la función para la conexión a la BBDD
-const { connect } = require('./api/utils/connect.js');
+const { connect } = require('./utils/connect.js');
 
 // Express APIs
-const user = require('./api/routes/user.routes');
-const products = require('./api/routes/product.routes');
+const user = require('./routes/user.routes');
+const products = require('./routes/product.routes');
 
 //Ejecutamos la funcion que conecta con la db
 connect();
